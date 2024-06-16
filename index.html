@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front page</title>
+ <!-- FONT files -->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Play:wght@400;700&family=Tac+One&display=swap" rel="stylesheet">
+ <!-- CSS files-->
+    <link href="main.css" rel="stylesheet">
+    <link href="CSSReset24.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>T</h1><p>om</p><h1>P</h1><p>uter</p><span>.hu</span>
+    </header>
+    <main>
+        <section id="upper" class="">
+            <span id="helloTitle">
+                <h1>Üdv kedves látogató!</h1>
+            </span>
+            <span id="helloPic">
+                <p>valamit ide kell írni, hogy látható legyen ez a rész.</p>
+            </span>
+            <span id="helloText">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In est ante in nibh mauris cursus mattis molestie. Pharetra massa massa ultricies mi quis hendrerit.</p>
+            </span>                    
+        </section>
+        <div id="lower">
+            <p>Portfolió elemei</p>
+            <div class="demos"><span>1</span></div>
+            <div class="demos"><span>2</span></div>
+            <div class="demos"><span>3</span></div>
+            <div class="demos"><span>4</span></div>
+            <div class="demos"><span>5</span></div>
+            <div class="demos"><span>6</span></div>        
+        </div>
+
+        <div id="popup">
+            <span>x</span>
+        </div>
+    </main>
+
+    <footer>
+        <p>elérhetőségek</p>
+    </footer>
+
+
+    <script>
+        document.querySelector("#popup span").addEventListener("click", removeClass);
+        
+            function removeClass() {
+            document.querySelector("main").classList.remove("flip");
+            document.querySelector("#popup").classList.remove("flip");
+            document.querySelector("main").classList.add("unflip");
+            document.querySelector("#popup").classList.add("unflip");
+        }
+ 
+        document.getElementsByClassName("demos")[1].addEventListener("click", addClass);
+        
+            function addClass() {
+            document.querySelector("main").classList.add("flip");
+            document.querySelector("#popup").classList.add("flip");
+            document.querySelector("main").classList.remove("unflip");
+            document.querySelector("#popup").classList.remove("unflip");
+        }
+        
+        
+
+    </script>
+        
+</body>
+</html>
