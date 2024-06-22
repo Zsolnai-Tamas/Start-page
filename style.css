@@ -2,7 +2,7 @@ body {
     background: linear-gradient(220.55deg, #565656 0%, #181818 100%) no-repeat;
     margin: 5px 10px;
     perspective: 1000px;
-}
+    }
 
 header, main, footer {
     background-color: antiquewhite;
