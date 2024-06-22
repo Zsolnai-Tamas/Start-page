@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>front page</title>
- <!-- FONT files -->   
+<!-- FONT files -->   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Play:wght@400;700&family=Tac+One&display=swap" rel="stylesheet">
@@ -17,63 +17,85 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-    <header>
-        <p><h1>T</h1>om<h1>P</h1>uter</p><span>.hu</span>
-    </header>
-    <main>
-        <section class="row">
-            <span class="col-md-6 text-center">
-                <h1>Üdv kedves látogató!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In est ante in nibh mauris cursus mattis molestie. Pharetra massa massa ultricies mi quis hendrerit.</p>
-            </span>                    
-            <span class="col-sm-6">
-                <p>valamit ide kell írni, hogy látható legyen ez a rész.</p>
-            </span>
+    <div class="container-fluid" style="background-color: #D1E2C4;">
+<!-- Navbar -->       
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span><span style="font-size: 150%;">T</span>om <span style="font-size: 150%;">P</span>uter <span style="font-size:50% ;">.hu</span></span> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto fw-bold">
+                            <a class="nav-link mx-5" href="#Saját ötleteim">Saját ötleteim</a>
+                            <a class="nav-link mx-5" href="#Blog bejegyzések">Blog bejegyzések</a>
+                            <a class="nav-link mx-5" href="#Szakmai önéletrajz">Szakmai önéletrajz</a>
+                            <a class="nav-link mx-5" href="#Kapcsolat">Kapcsolat</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>            
+        </header>
+        <main>
+<!-- Profile -->        
+        <section class="row justify-content-md-center py-5" style="background-color: #D1E2C4; color: #31352E;">
+            <div class="col-md-7 text-center">
+                <h1 class="display-4 fw-bold mb-5 ">Üdv kedves látogató!</h1>
+                <p class="fs-4 lh-lg mb-5">Üdvözöllek kedves látogató! Tom Puter vagyok, front-end fejlesztést tanulok autodidakta módon. 
+                    Ezen az oldalon bemutatom mire jutottam eddig. Bízom benne, hogy tetszik amit itt látsz. 
+                    Kérlek oszd meg velem a véleményed eddigi munkámról!</p>
+                <button type="button" class="btn btn-primary btn-lg shadow mb-5">Itt lehet nekem üzenni</button>
+            </div>                    
+            <div class="col-md-4">
+                <img src="/pic/Designer.jpeg" class="img img-thumbnail shadow" alt="Egy ember ül a számítógépnél">    
+            </div>
 
         </section>
-        <div id="lower">
-            <p>Portfolió elemei</p>
-            <div class="demos"><span>1</span></div>
-            <div class="demos"><span>2</span></div>
-            <div class="demos"><span>3</span></div>
-            <div class="demos"><span>4</span></div>
-            <div class="demos"><span>5</span></div>
-            <div class="demos"><span>6</span></div>        
-        </div>
 
-        <div id="popup">
-            <span>x</span>
-        </div>
+<!-- My own ideas --> 
+        <section class="row py-5" id="Saját ötleteim" style="background-color: #31352E; color: #EBEBE8;">
+            <h1 class="text-center">Saját ötleteim</h1>
+            <div class="col-md-3"><span>1</span></div>
+            <div class="col-md-3"><span>2</span></div>
+            <div class="col-md-3"><span>3</span></div>
+            <div class="col-md-3"><span>4</span></div>
+            <div class="col-md-3"><span>5</span></div>
+            <div class="col-md-3"><span>6</span></div>        
+    
+        </section>
+
+<!-- Blog -->
+        <section class="row" id="Blog bejegyzések">
+            <h1>Blog bejegyzések</h1>
+
+        </section>
+<!-- Professional introduction -->
+        <section class="row" id="Szakmai önéletrajz">
+            <h1>Szakmai önéletrajz</h1>
+            <p>Lelkesen dolgozom azon, hogy hobbi fejlesztőből profivá válhassak. 
+                Jó barátságban vagyok már a HTML, CSS, JAVASCRIPT nyelvekkel.
+                A BOOTSTRAP 5 könyvtárat tudom használni,és a WORDPRESS keretrendszert is kipróbáltam már.   
+                Most ismerkedek a NODEJS és REACT nyujtotta lehetőségekkel. 
+                Szívesen vállalok olyan feladatot amelyben fel tudom használni megszerzett tudásomat. 
+                Akár csapatban, vagy egyénileg</p>
+        </section>
     </main>
-
-    <footer>
-        <p>elérhetőségek</p>
+<!-- Contact -->
+    <footer class="row" id="Kapcsolat" style="background-color: #31352E; color: #EBEBE8;">
+        <h1>Kapcsolat</h1>
+        <p>Github</p>
+        <p>Linkedin</p>
+        <p>Facebook</p>
+        <p>Email</p>
     </footer>
-    </div>
+    </div><!-- End of the side -->
 
+<!-- Bootstrap 5 script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-        document.querySelector("#popup span").addEventListener("click", removeClass);
-        
-            function removeClass() {
-            document.querySelector("main").classList.remove("flip");
-            document.querySelector("#popup").classList.remove("flip");
-            document.querySelector("main").classList.add("unflip");
-            document.querySelector("#popup").classList.add("unflip");
-        }
- 
-        document.getElementsByClassName("demos")[1].addEventListener("click", addClass);
-        
-            function addClass() {
-            document.querySelector("main").classList.add("flip");
-            document.querySelector("#popup").classList.add("flip");
-            document.querySelector("main").classList.remove("unflip");
-            document.querySelector("#popup").classList.remove("unflip");
-        }
-        
-        
 
+<!-- Own Js script -->
+    <script>
     </script>
         
 </body>
