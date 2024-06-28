@@ -35,8 +35,25 @@ footer{
     color: antiquewhite;
 }
 
- */
+ 
  #778A35
  #D1E2C4
  #EBEBE8
- #31352E
+ #31352E*/
+ .bebas-neue-regular, h1, h2, h3, h4, span, a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .jaini-regular, p {
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+  h1 {
+    letter-spacing: .2em;
+  }
+  
+ 
