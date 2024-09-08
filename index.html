@@ -27,7 +27,8 @@
 </head>
 
 <body>
-    <div class="container-fluid" style="background-color: var(--color2);">
+    <div class="container-fluid" 
+    style="background-color: var(--color2);">
 <!-- Navbar -->       
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
@@ -51,12 +52,13 @@
 <!-- Profile -->        
 
         <section class="row justify-content-md-center py-5" id="Profil">
-            <div class="col-md-7 text-center shadow p-4 rounded-3" style="background-color:var(--color11); color:var(--color4)">
+            <div class="col-md-7 text-center shadow p-4 rounded-3" 
+                 style="background-color:var(--color11); color:var(--color4)">
                 <h1 class="display-4 fw-bold mb-5">Üdv kedves látogató!</h1>
                 <p class="fs-4 lh-lg mb-5">Tom Puter vagyok, front-end fejlesztést tanulok autodidakta módon. 
                     Ezen az oldalon bemutatom mire jutottam eddig. Bízom benne, hogy tetszik amit itt látsz. 
                     Kérlek oszd meg velem a véleményed eddigi munkámról!</p>
-               <a href="mailto:tomikacat@gmail.com" target="_blank"><button type="button" class="btn btn-primary btn-lg shadow mb-5 rounded-pill">Itt lehet nekem üzenni </button></a>
+               <a href="mailto:tomikacat@gmail.com" target="_blank" class="btn btn-primary btn-lg shadow mb-5 rounded-pill">Itt lehet nekem üzenni </a>
             </div>                    
             <div class="col-md-4">
                 <img src="pic/Designer.jpeg" class="img img-thumbnail shadow pb-5 mt-4" alt="Egy ember ül a számítógépnél">    
@@ -66,173 +68,53 @@
 
 <!-- My own ideas --> 
         <section class="row py-5" id="Sajat_otleteim">
-            <h1 class="text-center pb-4">Saját ötleteim</h1>
+            <h1 class="text-center pb-4">Ötletek</h1>
             <div class="col-md-2 my-3">
-                <div class="card text-body">
-                    <img src="pic/banyasz.png" class="card-img-top" alt="bányász a tárnában csákánnyal" />
+                <div class="card text-body" style="border-radius:5%;">
+                    <img src="pic/banyasz.png" class="card-img-top rounded-circle mx-auto border border-5 border-white"  alt="bányász a tárnában csákánnyal" />
                     <div class="card-body">
                     <h4>Alapelv</h4>
-                    <p class="card-text">
+                    <p class="card-text" style="height: 30vh;">
                         Ebben a kis demóban szeretném megmutatni mit gondolok a munkáról.
                     </p>
-                        <div>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Demó</button>
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
-                                    <div class="offcanvas-header">
-                                        <h4 id="offcanvasTopLabel">Munka Alapelve</h4>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                <div class="offcanvas-body">
-                                    <iframe src="../alapelv/index.html" width="100%" height="100%" frameborder="2"></iframe>
-                                    <a href="#Kapcsolat"><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" >Leírás</button></a>
-                                </div>
-                                </div>
-                            <button class="btn btn-link" type="button">Github</button>
-                        </div> <!-- End of offcanvas -->
+                    <a href="../alapelv/index.html" target="_blank" class="btn btn-primary btn-lg shadow mb-5">Demo </a>
+                    <a href="#Alapelv_leiras" class="btn btn-info btn-lg shadow mb-5 float-end">leírás </a>
+
                     </div> <!-- End of card body -->
                 </div> <!-- End of card -->
             </div> <!-- End of columb -->   
 
             <div class="col-md-2 my-3">
-                <div class="card text-body">
-                    <img src="/pic/generated_image (1).png" class="card-img-top" alt="Ember a számítógépnél" />
-                    <div class="card-body">
-                    <h4>Demó</h4>
-                    <p class="card-text">
-                        Itt van a leírása az aktuális demónak 2-3 mondatban.
+                <div class="card text-body" style="border-radius:5%;">
+                    <img src="pic/abakusz.png" class="card-img-top rounded-circle mx-auto border border-5 border-white"  alt="A képen egy abakusz van" />
+                    <div class="card-body" id="">
+                    <h4>Számológép</h4>
+                    <p class="card-text" style="height: 30vh;">
+                        Számológép az alapműveletek elvégzésére billentyűzetről is.
                     </p>
-                        <div>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Demó</button>
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
-                                    <div class="offcanvas-header">
-                                        <h4 id="offcanvasTopLabel">Offcanvas fejrész</h4>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                <div class="offcanvas-body">
-                                    <h2>Itt van az Offcanvas lényege.</h2>
-                                </div>
-                                </div>
-                            <button class="btn btn-link" type="button">Github</button>
-                        </div> <!-- End of offcanvas -->
+                    <a href="../calculator/index.html" target="_blank" class="btn btn-primary btn-lg shadow mb-5">Demo </a>
+                    <a href="#Szamologep" class="btn btn-info btn-lg shadow mb-5 float-end">leírás </a>
+
                     </div> <!-- End of card body -->
                 </div> <!-- End of card -->
             </div> <!-- End of columb -->   
 
-            <div class="col-md-2 my-3">
-                <div class="card text-body">
-                    <img src="/pic/generated_image (1).png" class="card-img-top" alt="Ember a számítógépnél" />
-                    <div class="card-body">
-                    <h4>Demó</h4>
-                    <p class="card-text">
-                        Itt van a leírása az aktuális demónak 2-3 mondatban.
-                    </p>
-                        <div>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Demó</button>
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
-                                    <div class="offcanvas-header">
-                                        <h4 id="offcanvasTopLabel">Offcanvas fejrész</h4>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                <div class="offcanvas-body">
-                                    <h2>Itt van az Offcanvas lényege.</h2>
-                                </div>
-                                </div>
-                            <button class="btn btn-link" type="button">Github</button>
-                        </div> <!-- End of offcanvas -->
-                    </div> <!-- End of card body -->
-                </div> <!-- End of card -->
-            </div> <!-- End of columb -->   
-
-            <div class="col-md-2 my-3">
-                <div class="card text-body">
-                    <img src="/pic/generated_image (1).png" class="card-img-top" alt="Ember a számítógépnél" />
-                    <div class="card-body">
-                    <h4>Demó</h4>
-                    <p class="card-text">
-                        Itt van a leírása az aktuális demónak 2-3 mondatban.
-                    </p>
-                        <div>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Demó</button>
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
-                                    <div class="offcanvas-header">
-                                        <h4 id="offcanvasTopLabel">Offcanvas fejrész</h4>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                <div class="offcanvas-body">
-                                    <h2>Itt van az Offcanvas lényege.</h2>
-                                </div>
-                                </div>
-                            <button class="btn btn-link" type="button">Github</button>
-                        </div> <!-- End of offcanvas -->
-                    </div> <!-- End of card body -->
-                </div> <!-- End of card -->
-            </div> <!-- End of columb -->   
-
-            <div class="col-md-2 my-3">
-                <div class="card text-body">
-                    <img src="/pic/generated_image (1).png" class="card-img-top" alt="Ember a számítógépnél" />
-                    <div class="card-body">
-                    <h4>Demó</h4>
-                    <p class="card-text">
-                        Itt van a leírása az aktuális demónak 2-3 mondatban.
-                    </p>
-                        <div>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Demó</button>
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
-                                    <div class="offcanvas-header">
-                                        <h4 id="offcanvasTopLabel">Offcanvas fejrész</h4>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                <div class="offcanvas-body">
-                                    <h2>Itt van az Offcanvas lényege.</h2>
-                                </div>
-                                </div>
-                            <button class="btn btn-link" type="button">Github</button>
-                        </div> <!-- End of offcanvas -->
-                    </div> <!-- End of card body -->
-                </div> <!-- End of card -->
-            </div> <!-- End of columb -->   
-
-            <div class="col-md-2 my-3">
-                <div class="card text-body">
-                    <img src="/pic/generated_image (1).png" class="card-img-top" alt="Ember a számítógépnél" />
-                    <div class="card-body">
-                    <h4>Demó</h4>
-                    <p class="card-text">
-                        Itt van a leírása az aktuális demónak 2-3 mondatban.
-                    </p>
-                        <div>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Demó</button>
-                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100vh;">
-                                    <div class="offcanvas-header">
-                                        <h4 id="offcanvasTopLabel">Offcanvas fejrész</h4>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                <div class="offcanvas-body">
-                                    <h2>Itt van az Offcanvas lényege.</h2>
-                                </div>
-                                </div>
-                            <button class="btn btn-link" type="button">Github</button>
-                        </div> <!-- End of offcanvas -->
-                    </div> <!-- End of card body -->
-                </div> <!-- End of card -->
-            </div> <!-- End of columb -->   
     
         </section>
 
 <!-- Blog -->
         <section class="row py-5" id="Blog_bejegyzesek">
-            <h1 class="text-center pb-4">Blog bejegyzések</h1>
-            <div class="container col-md-8 p-4" style="background-color: var(--color3);">
+            <h1 class="text-center pb-4">Bejegyzések</h1>
+            <div class="container col-md-8 p-4"  style="background-color: var(--color3);">
                 <div class="row">
-                    <div class="col-md-4 text-center">
-                        <h2 id="Alapelv_leiras"> Alapelvem a munkáról</h2>
+                    <div class="col-md-4 text-center" id="Alapelv_leiras">
                         <img class="shadow" src="pic/banyasz.png" alt="bányász a tárnában egy csákánnyal" width="300px">
                     </div>
                     <div class="col-md-6" style="transform: rotate(180deg);">    
                         <p class="m-4 fs-4 text-muted" style="transform: rotate(180deg);">Nem árt az elején tisztázni hogyan dolgozom. Remélem ez a kis 
                             szösszenet nem túl rámenős.
                         </p>
+                        <h2  style="transform:rotate(180deg)" class="my-4 text-center"> Alapelvem a munkáról</h2>
                     </div>
                     <div class="clearfix">
                         <a class="btn btn-primary float-end m-2" data-bs-toggle="collapse" href="#textarea" role="button" aria-expanded="false" aria-controls="textarea">
@@ -242,9 +124,38 @@
                         <div class="collapse" id="textarea">
                             <p class="m-4">
                             Ezt a "poént" pár hónapja hallottam, és rögtön nagyon megtetszett nekem. Úgy döntöttem megosztom mindenkivel akivel
-                            csak tudom. 
+                            csak tudom. <br>
+                            Az oldal csak HTML, és CSS elemeket tartalmaz. A kód GitHub-on megnézhető.    
                             </p>
+                            <a href="https://github.com/Zsolnai-Tamas/Basis-principle" target="blank" class="btn btn-info btn-lg shadow mb-5 float-end">GITHUB </a>
+        
                         </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-md-4 text-center" id="Szamologep">
+                            <img class="shadow" src="pic/abakusz.png" alt="a képen egy abakusz van" width="300px">
+                        </div>
+                        <div class="col-md-6" style="transform: rotate(180deg);">    
+                            <p class="m-4 fs-4 text-muted" style="transform: rotate(180deg);">
+                                Egyszerű Számológép az alapműveletek elvégzéséhez.
+                            </p>
+                            <h2  style="transform:rotate(180deg)" class="my-4 text-center"> Számológép</h2>
+                        </div>
+                        <div class="clearfix">
+                            <a class="btn btn-primary float-end m-2" data-bs-toggle="collapse" href="#textarea2" role="button" aria-expanded="false" aria-controls="textarea">
+                                Részletes leírás
+                            </a>
+                        </div>      
+                            <div class="collapse" id="textarea2">
+                                <p class="m-4">
+                                    Nézegettem milyen programokat szoktak rakni egy portfolióba. Minden cikk amit találtam említette a 
+                                    Számológépet. Rajtam ne múljon, tessék itt van. Nem túl izgalmas, de működik. Ami szerinitem kicsit
+                                    több a szokásosnál, hogy billentyűzetről is használható. <br>
+                                    HTML, CSS, és JAVASCRIPT nyelven készült. A kód GitHub-on megnézhető. 
+                                </p>
+                                <a href="https://github.com/Zsolnai-Tamas/Calculator" target="blank" class="btn btn-info btn-lg shadow mb-5 float-end">GITHUB </a>
+                            </div>
+        
                 </div>
             </div> <!-- End of blog container -->   
         </section>
